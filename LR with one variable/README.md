@@ -15,8 +15,8 @@ theta_1 = 1.166362350335582
 
 Linear regression model
 
-![Linear regression](.\plots\Linear regression.png)
+![](https://github.com/Babababanana/m-learning/blob/master/LR%20with%20one%20variable/plots/Linear%20regression.png)
 
 Cost function
 
-![Cost function](.\plots\Cost function.png)
+![](https://github.com/Babababanana/m-learning/blob/master/LR%20with%20one%20variable/plots/Cost%20function.png)
