@@ -1,5 +1,5 @@
-import random
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -73,15 +73,7 @@ def linear_reg(train_x, train_y):
 
     plt.show()
 
-X = np.array([])
-Y = np.array([])
-
-with open('data.txt') as f:
-    pair = f.readlines()
-
-for x_y in pair:
-    x_y = x_y.strip('\n')
-    X = np.append(X, [float(x_y.split(',')[0])])
-    Y = np.append(Y, [float(x_y.split(',')[1])])
-
-linear_reg(X, Y)
+df = pd.read_csv('data.csv')
+X = df.iloc[:, 0]
+y = df.iloc[:, -1]
+linear_reg(X, y)
